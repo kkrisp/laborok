@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+
+\usepackage{hyperref}
+\usepackage{float}
+
+\usepackage{anysize}
+%marginsize{left }{right}{top  }{bottom}
+\marginsize{2.0cm}{2.0cm}{1.0cm}{2.0cm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Modern fizika laboratórium}
+\lhead{Granuális anyagok}
+\fancyfoot[c]{\large\thepage.oldal}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+	\section{Bevezetés}
+	Granuláris anyagoknak a nagy számú ($10^4 - 10^6$ db) makroszkópikus részecskékből( $10 \mu m - 10 m$ átmérőjű)  álló rendszereket nevezzük.  A granuláris részecskékre ható erőhatások közül a gravitációs erő, két részecske összenyomódásakor fellépő taszítóerő és az érintkezési pontokon fellépő surlódási erő tartozik a legjelentősebbek. A granuláris anyag részecskéinek az átlagos helyzeti energiájához képest az egy szabadsági fokra jutó $k_BT$ ter mikus energia elhanyagolható. Emiatt a hőmérsékletnek az átlagoló befolyása elvész ezeknél a komplex rendszereknél. Ennek köbetkeztében nem alakul a rendszeren belül termikus egyensúly. Ez azt jelenti, hogy külső megzavarás nélkül a rendszer bármely metastabil állapota végtelen sok ideig fennmaradhat. Keveredés, homogén eloszlások kialakulása helyett rendeződés, szegregáció, komplex struktúrák alakulnak ki.
+	
+	\section{A mérés célja}
+	
+	A mérés célja a granuláris anyagokban fellépő nyomás mélységfüggésének a vizsgálata a \textbf{Janssen modellel}, majd a rendszeren belüli inhomogén erőeloszlásoknak erőláncoknak a vizsgálata a \textbf{q-modell} alkalmazasávál.
+	
+	\section{A mérés elve}
+	
+	A nyomás mélységfüggésenek a leírása granuláris oszlopokban különbözik a folyadékoszlopokban létrejövő nyomás leírásától. Granuláris anyagok esetében a folyadékoknál használt $P(z)=\rho gz$ összefüggés nem áll fent. Azért, hogy meghatározzuk a granuláris oszlopok által keletkeztetett nyomást a Jennsen-modell legfőbb feltevéseit tekintjük.
+	Tekintsünk egy $R$ sugarú, $\rho$ átlagos sűrűségű hengeres edényt, amelyet granuláris anyaggal megtöltünk.
+	A Jennsen-modell értelmében:
+	
+	A függőleges nyomás nagysága csak a mélységfügtől függ
+	
+	$$P(x,y,z)=P(z)$$
+	
+	A vízszintes irányban mérhető nyomás arányos a függőleges nyomással
+	$$P_hor=KP( z )$$
+	
+	
+	Az üveghenger falainal fellépő tapadási surlódási erők felfelé mutatnak és mind a maximális értékeiket veszik fel
+	
+	$$dF_frict=\mu KP( z )2\pi Rdz$$
+	
+	
+	ahol $\mu$ a henger üvegfala és a granuláris anyag közti statikus súrlódási együttható
+	Továbbá a Jennsen-modell szerint az anyag minden $dz$ vastagságú és $S=\pi R^2$ felületű vízszintes szeletének egyensúlyban kell lennie. Tehát, mivel ezekre a szeletekre hat a gravitációs erő, a fölötte és alatta mérhető nyomás különbségéből adódó és az üvegfalaknál fellépő súrlódási erő, ezért a Newton-egyenlet
+	
+	$$\rho gSdz-\frac{dP( z )}{dz} Sdz-dF_{frict}=0$$
+	
+	
+	A Jennsen-modell egyik feltevéséből kapott $dF_{frict}$-et behelyettesítjük a Newton-egyenletbe, majd átrendezve azt kapjuk, hogy 
+	$${dP( z )}+ \frac{1}{\lambda P}=\rho g$$
+	
+	
+	
+	ahol
+	
+	
+	$$\lambda = \frac{R}{2 \mu K}$$
+	A $P(0)=0$ kezdeti feltétellet a differenciálegyenlet megoldása 
+	$$P(z) 7 \lambda \rho g \left(1 - e^{\frac{z}{\lambda}}\right)$$
+	
+	
+	Tehát tetszőlegesen nagy z-re a nyomás nem divergál, hanem $\lambda$ karakterisztikus távolságon exponenciálisan megy telítésbe. A konkrét feladatra a differenciálegyenlet megoldása
+	
+	$$P(z) = m_\infty \left( 1-e^{\frac{z}{m_\infty}}\right)$$
+	
+%	A mérés során az $m_\infty$ értéket kell meghatároznunk különboző töltési módszerek és granuláris anyagok esetén.
+	
+	\section{A mérés során felhasznált mérési eszközök}
+	\begin{itemize}
+		\item Különböző granuláris anyagok: köles, műanyag- és üveggolyók
+		\item Műanyagpoharak
+		\item Merőkanál
+		\item Üveghenger
+		\item Elektronikus táramérleg
+		\item Talpas fémhenger dugattyúval
+		\item Kartonpapír
+		\item Fénymásoló A4 formátumú papír
+		\item Indigó
+	\end{itemize}
+	
+	\section{A mérés menete}
+	\subsection{title}
+\end{document}
