@@ -1,0 +1,22 @@
+set term png
+#set output "homersekletfugges.png"
+set output "homersekletfuggeszoom.png"
+
+set grid
+set xlabel 'wavelength [nm]'
+set ylabel 'absorbtion [%]'
+#set xrange[385:725]
+
+set xrange[500:560]
+set yrange[1.34:1.44]
+
+plot\
+    'S4F6T251.ASC' every ::0::185 with lines title "251 K",\
+    'S4F6T300.ASC' every ::0::185 with lines title "300 K",\
+    'S4F6T349.ASC' every ::0::185 with lines title "349 K",\
+    'S4F6T400.ASC' every ::0::185 with lines title "400 K",\
+    'S4F6T450.ASC' every ::0::185 with lines title "450 K",\
+    'S4F6T500.ASC' every ::0::185 with lines title "500 K",\
+    'S4F6T550.ASC' every ::0::185 with lines title "550 K",\
+    'S4F6T599.ASC' every ::0::185 with lines title "599 K",\
+    'S4F6T600.ASC' every ::0::185 with lines title "600 K"

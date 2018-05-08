@@ -1,0 +1,17 @@
+set term png
+set output "abszorbcios_csucsok.png"
+
+set grid
+set xlabel 'wavelength [nm]'
+set ylabel 'absorbtion [%]'
+set xrange[385:725]
+plot\
+    'S1F9XXXX.ASC' every ::0::185 with lines title "9 - 1",\
+    'S2F8XXXX.ASC' every ::0::185 with lines title "8 - 2",\
+    'S3F7XXXX.ASC' every ::0::185 with lines title "7 - 3",\
+    'S4F6XXXX.ASC' every ::0::185 with lines title "6 - 4",\
+    'S5F5XXXX.ASC' every ::0::185 with lines title "5 - 5",\
+    'S6F4XXXX.ASC' every ::0::185 with lines title "4 - 6",\
+    'S7F3XXXX.ASC' every ::0::185 with lines title "3 - 7",\
+    'S8F2XXXX.ASC' every ::0::185 with lines title "2 - 8",\
+    'S9F1XXXX.ASC' every ::0::185 with lines title "1 - 9"

@@ -1,0 +1,15 @@
+a=1.0
+d=1.0
+k=1.5
+B(x,k,d)=-k*d/2 - k*d*x -k/2 + k*x - 1
+C(x,k,d)=k*d/4 - k*d*x**2
+f(x,k,d,a)=a/(2*k)*(-B(x,k,d)-sqrt(B(x,k,d)**2 - 4*k*C(x,k,d)))
+
+fit f(x,k,d,a) 'feladat2.txt' via k,d,a
+set termoption enhanced
+set ylabel 'a*'
+set xlabel '{/Symbol l}* (nm)'
+set term png
+set xrange[-0.5:0.5]
+set output "test.png"
+plot f(x, k, d, a) w lines ls 2 notitle, 'feladat2.txt' u 1:2:3 w errorbar ls 1 notitle
