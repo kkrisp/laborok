@@ -1,0 +1,20 @@
+set term png size 900, 300
+set grid
+
+set ylabel "intensity"
+
+do for [i=0:4] {
+    set output "pics/mA".(i*20+150).".png"
+    set title "".(i*20+150)." mA"
+    plot "cut_mA".(i*20+150).".data" with lines notitle
+}
+
+do for [i=0:4] {
+    set output "pics/mA".(i*50+520).".png"
+    set title "".(i*50+520)." mA"
+    plot "cut_mA".(i*50+520).".data" with lines notitle
+}
+
+set output "pics/kallib.png"
+set title "calibration"
+plot "cut_kallib.data" with lines notitle
