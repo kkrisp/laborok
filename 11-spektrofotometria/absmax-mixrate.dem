@@ -1,7 +1,0 @@
-set term png size 800 400
-set output 'absmax-mixrate.png'
-
-
-
-set grid
-plot 'feladat2.txt' w errorbar using 1:2:3
