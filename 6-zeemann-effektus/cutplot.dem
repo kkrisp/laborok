@@ -1,8 +1,0 @@
-set term png size 900, 300
-set output "calcut2.png"
-set grid
-
-set arrow from 319,0 to 319,160 nohead lw 2 lc "blue"
-set arrow from 655,0 to 655,160 nohead lw 2 lc "blue"
-set arrow from 484,0 to 484,160 nohead lw 2 lc "green"
-plot "firstcut2.data" with lines notitle
